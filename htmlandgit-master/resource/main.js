@@ -21,11 +21,18 @@ function validateForm() {
         alert("Tuổi không được bé hơn 18 hoặc lớn hơn 80!")
     }
 
-    if (email == null || !email.includes("@")) {
-        // TODO: Check email
-        validated = false;
-        alert("Email không đúng định dạng, vui lòng kiểm tra lại!");
-    }
+    function checkEmail() { 
+        var email = document.getElementById('email'); 
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+        if (!filter.test(email.value)) { 
+                 alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+                 email.focus; 
+                 return false; 
+        }
+        else{ 
+                 alert('Email hop le'); 
+        } 
+    } 
 
     if (username == null || username.length >= 30 || username.length < 6) {
         // TODO: Check kí tự đặc biệt
