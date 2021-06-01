@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML and GIT</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='resource/main.css'>
+    <script src='resource/main.js'></script>
+</head>
+<body>
+    <form name=register action="/signup" method="post" onsubmit="return validateForm()">
+        <h1>Đăng ký</h1>
+        <hr>
+        <label for="name">Họ và Tên</label>
+        <input type="text" name="name" id="name">
+        <label for="age">Tuổi</label>
+        <input type="number" name="age" id="age">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" id="password">
+        <label for="rpassword">Nhập lại mật khẩu</label>
+        <input type="password" name="rpassowrd" id="rpassword">
+        <label for="bio">Tiểu sử</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Đăng ký">
+    </form>
+</body>
+</html>
